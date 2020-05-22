@@ -1,6 +1,7 @@
 package br.com.spring.restwithspringbootudemy.mock;
 import br.com.spring.restwithspringbootudemy.data.model.Person;
 import br.com.spring.restwithspringbootudemy.data.viewmodel.PersonViewModel;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +47,7 @@ public class MockPerson {
         person.setAddress("Address Test" + number);
         person.setFirstName("First Name Test" + number);
         person.setGender(((number % 2)==0) ? "Male" : "Female");
-        person.setId(number.longValue());
+        person.setKey(number.longValue());
         person.setLastName("Last Name Test" + number);
         return person;
     }

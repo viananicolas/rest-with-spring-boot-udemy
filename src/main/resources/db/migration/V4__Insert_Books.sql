@@ -1,0 +1,16 @@
+INSERT INTO books (author, launch_date, price, title) VALUES
+('Michael C. Feathers', CAST(N'2017-11-29T13:50:05' AS DateTime), 49.00, 'Working effectively with legacy code'),
+('Ralph Johnson, Erich Gamma, John Vlissides e Richard Helm', CAST(N'2017-11-29T15:15:13' AS DateTime), 45.00, 'Design Patterns'),
+('Robert C. Martin', CAST(N'2009-01-10T00:00:00' AS DateTime), 77.00, 'Clean Code'),
+('Crockford', CAST(N'2017-11-07T15:09:01' AS DateTime), 67.00, 'JavaScript'),
+('Steve McConnell', CAST(N'2017-11-07T15:09:01' AS DateTime), 58.00, 'Code complete'),
+('Martin Fowler e Kent Beck', CAST(N'2017-11-07T15:09:01' AS DateTime), 88.00, 'Refactoring'),
+('Eric Freeman, Elisabeth Freeman, Kathy Sierra, Bert Bates', CAST(N'2017-11-07T15:09:01' AS DateTime), 110.00, 'Head First Design Patterns'),
+('Eric Evans', CAST(N'2017-11-07T15:09:01' AS DateTime), 92.00, 'Domain Driven Design'),
+('Brian Goetz e Tim Peierls', CAST(N'2017-11-07T15:09:01' AS DateTime), 80.00, 'Java Concurrency in Practice'),
+('Susan Cain', CAST(N'2017-11-07T15:09:01' AS DateTime), 123.00, 'O poder dos quietos'),
+('Roger S. Pressman', CAST(N'2017-11-07T15:09:01' AS DateTime), 56.00, 'Engenharia de Software: uma abordagem profissional'),
+('Viktor Mayer-Schonberger e Kenneth Kukier', CAST(N'2017-11-07T15:09:01' AS DateTime), 54.00, 'Big Data: como extrair volume, variedade, velocidade e valor da avalanche de informação cotidiana'),
+('Richard Hunter e George Westerman', CAST(N'2017-11-07T15:09:01' AS DateTime), 95.00, 'O verdadeiro valor de TI'),
+('Marc J. Schiller', CAST(N'2017-11-07T15:09:01' AS DateTime), 45.00, 'Os 11 segredos de líderes de TI altamente influentes'),
+('Aguinaldo Aragon Fernandes e Vladimir Ferraz de Abreu', CAST(N'2017-11-07T15:09:01' AS DateTime), 54.00, 'Implantando a governança de TI');

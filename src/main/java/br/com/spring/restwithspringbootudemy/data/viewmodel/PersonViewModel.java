@@ -1,11 +1,18 @@
 package br.com.spring.restwithspringbootudemy.data.viewmodel;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.github.dozermapper.core.Mapping;
+import org.springframework.hateoas.RepresentationModel;
+
 import java.io.Serializable;
 import java.util.Objects;
-public class PersonViewModel implements Serializable {
+
+public class PersonViewModel extends RepresentationModel<PersonViewModel> implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private Long id;
+    @Mapping("id")
+    @JsonProperty("id")
+    private Long key;
     private String firstName;
     private String lastName;
     private String address;
@@ -14,12 +21,12 @@ public class PersonViewModel implements Serializable {
     public PersonViewModel() {
     }
 
-    public Long getId() {
-        return id;
+    public Long getKey() {
+        return key;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setKey(Long key) {
+        this.key = key;
     }
 
     public String getFirstName() {
@@ -59,7 +66,7 @@ public class PersonViewModel implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         PersonViewModel person = (PersonViewModel) o;
-        return id.equals(person.id) &&
+        return key.equals(person.key) &&
                 firstName.equals(person.firstName) &&
                 lastName.equals(person.lastName) &&
                 address.equals(person.address) &&
@@ -68,6 +75,6 @@ public class PersonViewModel implements Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, address, gender);
+        return Objects.hash(key, firstName, lastName, address, gender);
     }
 }
